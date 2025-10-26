@@ -1,0 +1,29 @@
+﻿# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# build outputs
+bin/
+obj/
+TestResults/
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Editors
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temp
+~$*
+*.log
