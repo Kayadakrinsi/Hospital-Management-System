@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HMSBAL\HMSBAL\HMSBAL.csproj" />
     <ProjectReference Include="..\HMSDAL\HMSDAL.csproj" />
     <ProjectReference Include="..\HMSMAL\HMSMAL.csproj" />
   </ItemGroup>

@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HMSDAL\HMSDAL.csproj" />
-    <ProjectReference Include="..\..\HMSMAL\HMSMAL.csproj" />
+    <ProjectReference Include="..\HMSDAL\HMSDAL.csproj" />
+    <ProjectReference Include="..\HMSMAL\HMSMAL.csproj" />
   </ItemGroup>
 
 </Project>
