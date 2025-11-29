@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HMSDAL\HMSDAL.csproj" />
+    <ProjectReference Include="..\HMSMAL\HMSMAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.14.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="ServiceStack" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.Logging.NLog" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.OrmLite" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.OrmLite.Core" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.OrmLite.MySql" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.OrmLite.MySql.Core" Version="8.9.0" />
+    <PackageReference Include="ServiceStack.OrmLite.SqlServer" Version="8.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+  </ItemGroup>
+
+</Project>
