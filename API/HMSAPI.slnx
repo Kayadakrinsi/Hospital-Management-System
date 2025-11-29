@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/Solution Items/" />
   <Project Path="HMSAPI/HMSAPI.csproj" />
   <Project Path="HMSBAL/HMSBAL.csproj" Id="30a6c810-64aa-4078-8ba8-1a032f3a1fcb" />
   <Project Path="HMSDAL/HMSDAL.csproj" Id="6845ba24-130e-40d4-84d8-53a9472fa44e" />
