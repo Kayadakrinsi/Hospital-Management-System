@@ -1,0 +1,25 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /app
+
+# Copy only csproj files
+COPY API/HMSAPI/*.csproj API/HMSAPI/
+COPY API/HMSBAL/*.csproj API/HMSBAL/
+COPY API/HMSDAL/*.csproj API/HMSDAL/
+COPY API/HMSMAL/*.csproj API/HMSMAL/
+
+# Restore
+RUN dotnet restore API/HMSAPI/*.csproj
+
+# Copy all source
+COPY . .
+
+# Build & publish
+WORKDIR /app/API/HMSAPI
+RUN dotnet publish -c Release -o out
+
+# Runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
+WORKDIR /app
+COPY --from=build /app/API/HMSAPI/out .
+EXPOSE 5000
+ENTRYPOINT ["dotnet", "HMSAPI.dll"]
