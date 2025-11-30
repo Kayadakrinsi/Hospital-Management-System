@@ -4,10 +4,10 @@ WORKDIR /app
 
 # 2. Copy solution and projects
 COPY HMSAPI.sln ./
-COPY API/*.csproj ./API/
-COPY HMSBAL/*.csproj ./HMSBAL/
-COPY HMSDAL/*.csproj ./HMSDAL/
-COPY HMSMAL/*.csproj ./HMSMAL/
+COPY ../HMSAPI/*.csproj ./      # Copy HMSAPI project into current folder
+COPY ../HMSBAL/*.csproj ../HMSBAL/
+COPY ../HMSDAL/*.csproj ../HMSDAL/
+COPY ../HMSMAL/*.csproj ../HMSMAL/
 
 # 3. Restore dependencies
 RUN dotnet restore
