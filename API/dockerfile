@@ -1,32 +1,21 @@
-# Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /src
 
-# Copy solution and project files
-COPY HMSAPI.slnx ./
+WORKDIR /app
+
+# Copy solution file
+COPY HMSAPI.sln ./
+
+# Copy project files
 COPY HMSAPI/*.csproj ./HMSAPI/
 COPY HMSBAL/*.csproj ./HMSBAL/
 COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj ./HMSMAL/
 
 # Restore dependencies
-RUN dotnet restore HMSAPI.slnx
+RUN dotnet restore
 
 # Copy all source code
 COPY . .
 
 # Build and publish
-RUN dotnet publish HMSAPI.slnx -c Release -o /app --no-restore
-
-# Stage 2: Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
-WORKDIR /app
-
-# Copy published output
-COPY --from=build /app ./
-
-# Expose port (adjust if needed)
-EXPOSE 5000
-
-# Entry point
-ENTRYPOINT ["dotnet", "HMSAPI.dll"]
+RUN dotnet publish -c Release -o out
