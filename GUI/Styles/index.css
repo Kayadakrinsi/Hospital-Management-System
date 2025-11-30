@@ -1,0 +1,150 @@
+/* -------------------------------------
+   GLOBAL
+-------------------------------------- */
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #e0f2f1;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------
+   SIDEBAR
+-------------------------------------- */
+/* 250px ≈ 17% of typical 1440px screen */
+#sidebarContainer {
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+/* 70px ≈ 4.8% of typical 1440px screen */
+#sidebarContainer.collapsed {
+    width: 2%;
+}
+
+/* -------------------------------------
+   CONTENT AREA
+-------------------------------------- */
+/* margin-left equals sidebar width */
+#contentContainer {
+    transition: all 0.3s ease;
+    width:80%;
+    margin-left: 2%;
+}
+
+
+/* -------------------------------------
+   NAVIGATION
+-------------------------------------- */
+.sidebar-toggle {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#navbarContainer {
+    background-color: #009688;
+}
+
+/* -------------------------------------
+   TREEVIEW
+-------------------------------------- */
+.dx-treeview-item {
+    gap: -3px;
+    padding: 0.8% 0.3%; /* approximate px → % */
+    margin: 0;
+    color: white !important;
+}
+
+.dx-treeview-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Arrow right */
+.dx-treeview-toggle-item-visibility {
+    order: 2;
+    margin-left: auto !important;
+    margin-right: 1% !important;
+}
+
+.dx-treeview-item-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dx-treeview-item-content .dx-icon {
+    margin-right: 0.6%;
+}
+
+/* -------------------------------------
+   INVITATION FORM
+-------------------------------------- */
+.invitation-container {
+    max-width: 60%;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 2%;
+    box-shadow: 0 0.4% 1.2% rgba(0, 0, 0, 0.15);
+    padding: 3%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2%;
+    color: #00695c;
+    font-weight: 600;
+}
+
+.dx-field {
+    margin-bottom: 2%;
+}
+
+#btnSend {
+    margin-top: 1%;
+    width: 100%;
+}
+
+.dx-toast-content {
+    font-weight: 500;
+}
+
+/* -------------------------------------
+   TWO GRID LAYOUT 30/70
+-------------------------------------- */
+.grids-wrapper {
+    display: flex;
+    gap: 1%;
+}
+
+.left-grid {
+    flex: 0 0 30%;
+}
+
+.right-grid {
+    flex: 0 0 70%;
+}
+
+.left-grid,
+.right-grid {
+    box-sizing: border-box;
+}
+
+/* Save button centered */
+#btnSave {
+    clear: both;
+    margin-top: 2%;
+    width: 15%;
+    margin-left: 32.5%; /* matches 30/70 alignment */
+}
