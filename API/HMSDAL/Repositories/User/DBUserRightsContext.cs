@@ -5,8 +5,15 @@ using ServiceStack.OrmLite;
 
 namespace HMSDAL.Repositories.User
 {
+    /// <summary>
+    /// DB Context class for User Rights 
+    /// </summary>
     public class DBUserRightsContext : IUserRightsRepository
     {
+        /// <summary>
+        /// Retrieves the list of menus available to the current user
+        /// </summary>
+        /// <returns></returns>
         public List<Menus> GetUserMenus(int roleId, int departmentId)
         {
             List<Menus> result;

@@ -16,16 +16,28 @@ namespace HMSBAL.Services.Masters
     {
         #region Private Members
 
+        /// <summary>
+        /// Stores instance of Response class
+        /// </summary>
         Response _response;
 
+        /// <summary>
+        /// Stores instance of Logger class
+        /// </summary>
         Logger _logger;
 
+        /// <summary>
+        /// Stores instance of Appointments class
+        /// </summary>
         Appointments pocoAppointments;
 
         #endregion
 
         #region Constructor
 
+        /// <summary>
+        /// Initializes necessary sercvices/objects
+        /// </summary>
         public BLAppointmentsHandler()
         {
             _response = new();
@@ -36,6 +48,14 @@ namespace HMSBAL.Services.Masters
 
         #region Public Methods
 
+        /// <summary>
+        /// Retrives appointments data based on patientId and doctorId
+        /// If patientId and/or doctorId not passed retrives all data 
+        /// Else retrives data for the given patientId and/or doctorId
+        /// </summary>
+        /// <param name="patientId">Patient Id</param>
+        /// <param name="doctorId">Doctor Id</param>
+        /// <returns></returns>
         public Response GetAppointments(int patientId, int doctorId)
         {
             List<Appointments> lstAppointments = new();
@@ -77,6 +97,10 @@ namespace HMSBAL.Services.Masters
             return _response;
         }
 
+        /// <summary>
+        /// Retrieves the available doctors data
+        /// </summary>
+        /// <returns></returns>
         public Response GetDoctors()
         {
             List<Users> lstDoctors = new();
@@ -120,6 +144,10 @@ namespace HMSBAL.Services.Masters
             return _response;
         }
 
+        /// <summary>
+        /// Retrieves the available patients data
+        /// </summary>
+        /// <returns></returns>
         public Response GetPatients()
         {
             List<Users> lstPatients = new();
@@ -150,9 +178,13 @@ namespace HMSBAL.Services.Masters
             return _response;
         }
 
-
         #region Book Appointment
 
+        /// <summary>
+        /// Creates a new appointment using the specified appointment details
+        /// </summary>
+        /// <param name="objDTOAppointment">Instance of DTOAppointment class</param>
+        /// <returns></returns>
         public Response BookAppointment(DTOAppointment objDTOAppointment)
         {
             _response = ValidateAppointmentBooking(objDTOAppointment);
@@ -166,6 +198,11 @@ namespace HMSBAL.Services.Masters
             return _response;
         }
 
+        /// <summary>
+        /// Validates the appointment booking details
+        /// </summary>
+        /// <param name="objDTOAppointment">Instance of DTOAppointment class</param>
+        /// <returns></returns>
         public Response ValidateAppointmentBooking(DTOAppointment objDTOAppointment)
         {
             bool isTaken = false;
@@ -187,12 +224,20 @@ namespace HMSBAL.Services.Masters
             return _response;
         }
 
+        /// <summary>
+        /// Prepares the appointment booking details to be saved
+        /// </summary>
+        /// <param name="objDTOAppointment">Instance of DTOAppointment class</param>
         public void PreSaveAppointmentBooking(DTOAppointment objDTOAppointment)
         {
             pocoAppointments = new();
             BLGlobalClass.CopyProperties<DTOAppointment, Appointments>(objDTOAppointment, pocoAppointments);
         }
 
+        /// <summary>
+        /// Saves the appointment booking details
+        /// </summary>
+        /// <returns></returns>
         public Response SaveAppointmentBooking()
         {
             try
@@ -215,6 +260,12 @@ namespace HMSBAL.Services.Masters
 
         #endregion
 
+        /// <summary>
+        /// Update appointment status for given appointmentId
+        /// </summary>
+        /// <param name="appointmentId">Appointment Id</param>
+        /// <param name="status">Status value to be updated</param>
+        /// <returns></returns>
         public Response UpdateAppointmentStatus(int appointmentId, int status)
         {
             try

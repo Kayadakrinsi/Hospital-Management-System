@@ -1,5 +1,8 @@
 ﻿namespace HMSMAL.Common
 {
+    /// <summary>
+    /// Success MEssage Class
+    /// </summary>
     public class SuccessMessages
     {
 

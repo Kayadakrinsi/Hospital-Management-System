@@ -19,6 +19,9 @@ using System.Text;
 
 namespace HMSAPI
 {
+    /// <summary>
+    /// Configures application services and the HTTP request pipeline for the ASP.NET Core application
+    /// </summary>
     public class Startup
     {
         public IConfiguration Configuration { get; }

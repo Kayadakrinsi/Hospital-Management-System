@@ -18,16 +18,30 @@ namespace HMSBAL.Services.User
     {
         #region Private Members
 
+        /// <summary>
+        /// Stores instance of Response class
+        /// </summary>
         Response _response;
+
+        /// <summary>
+        /// Stores instance of IUserRightsRepository interface
+        /// </summary>
 
         IUserRightsRepository _userRightsRepository;
 
+        /// <summary>
+        /// Stores instance of Logger class
+        /// </summary>
         Logger _logger;
 
         #endregion
 
         #region Constructor
 
+        /// <summary>
+        /// Initializes necessary services/objects
+        /// </summary>
+        /// <param name="userRightsRepository"></param>
         public BLUserRightsHandler(IUserRightsRepository userRightsRepository)
         {
             _response = new();
@@ -39,6 +53,10 @@ namespace HMSBAL.Services.User
 
         #region Public Methods
 
+        /// <summary>
+        /// Retrieves the list of menus available to the current user
+        /// </summary>
+        /// <returns></returns>
         public Response GetUserMenus()
         {
             List<Menus> lstMenus = new();
@@ -58,45 +76,10 @@ namespace HMSBAL.Services.User
             return _response;
         }
 
-        public Response SaveUserRights(DTOUserRights objDTOUserRights)
-        {
-            try
-            {
-                using (var db = new MySqlOrmLite().Open())
-                {
-                    // Get existing record
-                    UserRights record = db.Single<UserRights>(_ur => _ur.UserId == objDTOUserRights.UserId && _ur.RoleId == objDTOUserRights.RoleId);
-
-                    if (record == null)
-                    {
-                        _response.ErrorCode = EnmErrorCodes.E0002;
-                    }
-
-                    objDTOUserRights.AddRights = string.IsNullOrEmpty(objDTOUserRights.AddRights) ? record.RightsIdsCsv : record.RightsIdsCsv + "," + objDTOUserRights.AddRights;
-                    objDTOUserRights.RemoveRights = string.IsNullOrEmpty(objDTOUserRights.RemoveRights) ? record.RemovedRightsIdsCsv : record.RemovedRightsIdsCsv + "," + objDTOUserRights.RemoveRights;
-
-                    db.UpdateOnly(() => new UserRights
-                    {
-                        RightsIdsCsv = objDTOUserRights.AddRights,
-                        RemovedRightsIdsCsv = objDTOUserRights.RemoveRights
-                    },
-                    where: _ur => _ur.UserId == objDTOUserRights.UserId && _ur.RoleId == objDTOUserRights.RoleId);
-
-                    _response.Message = SuccessMessages.S0004;
-                }
-            }
-            catch (Exception ex)
-            {
-                _response.ErrorCode = EnmErrorCodes.E0002;
-                _response.Message = ex.Message;
-                _logger.Error(ex, "Error in SaveUserRights");
-                throw;
-            }
-
-            return _response;
-        }
-
-
+        /// <summary>
+        /// Retrieves a list of users available to the current user to manage rights
+        /// </summary>
+        /// <returns></returns>
         public Response GetUsers()
         {
             List<Users> lstUsers = new();
@@ -139,7 +122,12 @@ namespace HMSBAL.Services.User
 
             return _response;
         }
-
+        /// <summary>
+        /// Retrieves the list of activities available to a specified user based on their role.
+        /// </summary>
+        /// <param name="userId">User Id</param>
+        /// <param name="roleId">Role Id</param>
+        /// <returns></returns>
         public Response GetUserActivities(int userId, int roleId)
         {
             List<Activities> lstActivities = new();
@@ -189,11 +177,58 @@ namespace HMSBAL.Services.User
 
         }
 
+        /// <summary>
+        /// Saves the user rights for a specified user
+        /// </summary>
+        /// <param name="objDTOUserRights">Instace of DTOUserRights class</param>
+        /// <returns></returns>
+        public Response SaveUserRights(DTOUserRights objDTOUserRights)
+        {
+            try
+            {
+                using (var db = new MySqlOrmLite().Open())
+                {
+                    // Get existing record
+                    UserRights record = db.Single<UserRights>(_ur => _ur.UserId == objDTOUserRights.UserId && _ur.RoleId == objDTOUserRights.RoleId);
+
+                    if (record == null)
+                    {
+                        _response.ErrorCode = EnmErrorCodes.E0002;
+                    }
+
+                    objDTOUserRights.AddRights = string.IsNullOrEmpty(objDTOUserRights.AddRights) ? record.RightsIdsCsv : record.RightsIdsCsv + "," + objDTOUserRights.AddRights;
+                    objDTOUserRights.RemoveRights = string.IsNullOrEmpty(objDTOUserRights.RemoveRights) ? record.RemovedRightsIdsCsv : record.RemovedRightsIdsCsv + "," + objDTOUserRights.RemoveRights;
+
+                    db.UpdateOnly(() => new UserRights
+                    {
+                        RightsIdsCsv = objDTOUserRights.AddRights,
+                        RemovedRightsIdsCsv = objDTOUserRights.RemoveRights
+                    },
+                    where: _ur => _ur.UserId == objDTOUserRights.UserId && _ur.RoleId == objDTOUserRights.RoleId);
+
+                    _response.Message = SuccessMessages.S0004;
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.ErrorCode = EnmErrorCodes.E0002;
+                _response.Message = ex.Message;
+                _logger.Error(ex, "Error in SaveUserRights");
+                throw;
+            }
+
+            return _response;
+        }
+
         #endregion
 
         #region Private Methods
 
-        // safely parse comma-separated integers
+        /// <summary>
+        /// Convert csv to list of integers
+        /// </summary>
+        /// <param name="csv">String of rights csv</param>
+        /// <returns></returns>
         private List<int> ToIntList(string csv)
         {
             if (string.IsNullOrWhiteSpace(csv)) return new List<int>();
@@ -203,6 +238,12 @@ namespace HMSBAL.Services.User
                       .ToList();
         }
 
+        /// <summary>
+        /// Prepares final rights list for given user id and role id
+        /// </summary>
+        /// <param name="userId">User Id</param>
+        /// <param name="roleId">Role Id</param>
+        /// <returns></returns>
         private List<int> GetFinalRights(int userId, int roleId)
         {
             List<int> lstDefaultRights = new(), lstAddedRights = new(), lstRemovedRights = new(), lstFinalRights = new();

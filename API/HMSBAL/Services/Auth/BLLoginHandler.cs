@@ -27,26 +27,55 @@ namespace HMSBAL.Services.Auth
     {
         #region Private Members
 
+        /// <summary>
+        /// Stores instance of Response class
+        /// </summary>
         Response objResponse;
 
+        /// <summary>
+        /// Stores instance of Response class
+        /// </summary>
         Invitations pocoInvitation { get; set; }
 
+        /// <summary>
+        /// Stores instance of Registration class
+        /// </summary>
         Registration pocoRegistration { get; set; }
 
+        /// <summary>
+        /// Stores instance of Users class
+        /// </summary>
         Users pocoUser { get; set; }
 
+        /// <summary>
+        /// Stores instance of UserRights class
+        /// </summary>
         UserRights pocoUserRights { get; set; }
 
+        /// <summary>
+        /// Stores instance of Logger class
+        /// </summary>
         Logger _logger;
 
+        /// <summary>
+        /// Stores instance of IDistributedCache
+        /// </summary>
         readonly IDistributedCache _cache;
 
+        /// <summary>
+        /// Stores instance of ILoginRepository interface
+        /// </summary>
         ILoginRepository _dbloginRepo;
 
         #endregion
 
         #region Constructor
 
+        /// <summary>
+        /// Initializes necessary dependencies,services and objects
+        /// </summary>
+        /// <param name="cache">Instance of IDistributedCache</param>
+        /// <param name="loginRepo">Instance of ILoginRepository</param>
         public BLLoginHandler(IDistributedCache cache, ILoginRepository loginRepo)
         {
             objResponse = new();
@@ -61,6 +90,10 @@ namespace HMSBAL.Services.Auth
 
         #region Get Data
 
+        /// <summary>
+        /// Retrieves the list of available user roles
+        /// </summary>
+        /// <returns></returns>
         public Response GetRoles()
         {
             List<Roles> lstRoles = new();
@@ -79,6 +112,10 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Retrieves the list of available departments
+        /// </summary>
+        /// <returns></returns>
         public Response GetDepartments()
         {
             List<Departments> lstDepts = new();
@@ -104,6 +141,11 @@ namespace HMSBAL.Services.Auth
 
         #region Invitation
 
+        /// <summary>
+        /// Invites a user by processing the provided invitation details
+        /// </summary>
+        /// <param name="objInv">Instance of DTOInvitation class</param>
+        /// <returns></returns>
         public Response Invite(DTOInvitation objInv)
         {
             objResponse = ValidateInvitation(objInv);
@@ -118,6 +160,11 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Validate invitation details
+        /// </summary>
+        /// <param name="objInv">Instace of DTOInvitation class</param>
+        /// <returns>Response Model</returns>
         public Response ValidateInvitation(DTOInvitation objInv)
         {
             bool isExists = false;
@@ -136,6 +183,10 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Prepares invitation details to be saved
+        /// </summary>
+        /// <param name="objInv">Instance of DTOInvitation class</param>
         public void PreSaveInvitation(DTOInvitation objInv)
         {
             pocoInvitation = new();
@@ -146,6 +197,10 @@ namespace HMSBAL.Services.Auth
             pocoInvitation.CreatedBy = LoggedInUserDetails.UserId;
         }
 
+        /// <summary>
+        /// Generates unique invitation code
+        /// </summary>
+        /// <returns>Invitation code</returns>
         public int GenerateInvitationCode()
         {
             int code;
@@ -166,6 +221,10 @@ namespace HMSBAL.Services.Auth
             return code;
         }
 
+        /// <summary>
+        /// Saves invitation details and sends invitation email
+        /// </summary>
+        /// <returns></returns>
         public Response SaveInvitation()
         {
             try
@@ -193,6 +252,13 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Sends invitation email to the invited user
+        /// </summary>
+        /// <param name="email">Email of invited user</param>
+        /// <param name="invCode">Invitation code of invited user</param>
+        /// <param name="expiry">Email expiry date</param>
+        /// <returns></returns>
         private Response SendInvitationEmail(string email, string invCode, DateTime expiry)
         {
             string frontendUrl = BLGlobalClass.GetSetting("AppSettings:FrontendUrl"),
@@ -240,6 +306,11 @@ namespace HMSBAL.Services.Auth
 
         #region Registration
 
+        /// <summary>
+        /// Registers a new user based on the provided registration details
+        /// </summary>
+        /// <param name="objRegistration">Instance Registration of class</param>
+        /// <returns></returns>
         public Response Register(Registration objRegistration)
         {
             objResponse = ValidateRegistration(objRegistration);
@@ -253,6 +324,11 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Validates registration details
+        /// </summary>
+        /// <param name="objRegistration">Instance of Registration class</param>
+        /// <returns></returns>
         public Response ValidateRegistration(Registration objRegistration)
         {
             using (var db = new MySqlOrmLite().Open())
@@ -268,6 +344,10 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Prepares registration details to be saved
+        /// </summary>
+        /// <param name="objRegistration">Instance of Registration class</param>
         public void PreSaveRegistration(Registration objRegistration)
         {
             pocoRegistration = objRegistration;
@@ -275,6 +355,9 @@ namespace HMSBAL.Services.Auth
             PrepareUserRights();
         }
 
+        /// <summary>
+        /// Preapres user details to be saved
+        /// </summary>
         public void PrepareUser()
         {
             pocoUser = new()
@@ -291,6 +374,9 @@ namespace HMSBAL.Services.Auth
             };
         }
 
+        /// <summary>
+        /// Prepares user rights details to be saved
+        /// </summary>
         public void PrepareUserRights()
         {
             pocoUserRights = new()
@@ -300,6 +386,10 @@ namespace HMSBAL.Services.Auth
             };
         }
 
+        /// <summary>
+        /// Saves registration details
+        /// </summary>
+        /// <returns></returns>
         public Response SaveRegistration()
         {
             try
@@ -330,6 +420,11 @@ namespace HMSBAL.Services.Auth
 
         #region Login
 
+        /// <summary>
+        /// Logs in a user by validating the provided login credentials, generates JWT Token, saves user details in cache
+        /// </summary>
+        /// <param name="objLogin"></param>
+        /// <returns></returns>
         public Response Login(Login objLogin)
         {
             bool isInvalidLoginId = false, isInvalidPassword = false;
@@ -409,6 +504,10 @@ namespace HMSBAL.Services.Auth
             return objResponse;
         }
 
+        /// <summary>
+        /// Generates JWT Token for authenticated user
+        /// </summary>
+        /// <returns></returns>
         private string GenerateJwtToken()
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(BLGlobalClass.GetSetting("Jwt:Key")));
@@ -438,6 +537,11 @@ namespace HMSBAL.Services.Auth
 
         #region Log Out
 
+        /// <summary>
+        /// Logs out the currently authenticated user and clears their session(clears cache session) or authentication token
+        /// </summary>
+        /// <param name="requestHeaders">Current HTTP Request Headers</param>
+        /// <returns></returns>
         public Response Logout(IHeaderDictionary requestHeaders)
         {
             try

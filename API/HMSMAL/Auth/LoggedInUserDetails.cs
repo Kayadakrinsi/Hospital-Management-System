@@ -1,5 +1,8 @@
 ﻿namespace HMSMAL.Auth
 {
+    /// <summary>
+    /// Stores Logged In User Details
+    /// </summary>
     public static class LoggedInUserDetails
     {
         /// <summary>

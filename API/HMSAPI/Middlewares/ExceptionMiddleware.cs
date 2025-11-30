@@ -4,6 +4,9 @@ using System.Text.Json;
 
 namespace HMSAPI.Middlewares
 {
+    /// <summary>
+    /// Exception handling middleware for global error catching and logging
+    /// </summary>
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
@@ -13,6 +16,14 @@ namespace HMSAPI.Middlewares
             _next = next;
         }
 
+        /// <summary>
+        /// Processes an HTTP request and handles any unhandled exceptions that occur during the request pipeline
+        /// </summary>
+        /// <remarks>If an exception is thrown during request processing, the exception is logged and an
+        /// appropriate response is generated. This method should be used as part of the ASP.NET Core middleware
+        /// pipeline</remarks>
+        /// <param name="context">The HTTP context for the current request</param>
+        /// <returns></returns>
         public async Task InvokeAsync(HttpContext context)
         {
             try
@@ -26,6 +37,16 @@ namespace HMSAPI.Middlewares
             }
         }
 
+        /// <summary>
+        /// Asynchronously logs detailed information about an unhandled exception that occurred during the processing of
+        /// an HTTP request
+        /// </summary>
+        /// <remarks>The log entry includes structured details such as the HTTP method, request path, user
+        /// identity, query string, response status code, exception type, message, and stack trace. Logging is performed
+        /// in a structured JSON format to facilitate searching and analysis</remarks>
+        /// <param name="context">The current HTTP context containing request and response information associated with the exception</param>
+        /// <param name="ex">The exception to log, including its message and stack trace</param>
+        /// <returns></returns>
         private static async Task LogExceptionDetailsAsync(HttpContext context, Exception ex)
         {
             var request = context.Request;
@@ -59,6 +80,14 @@ namespace HMSAPI.Middlewares
             await Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Writes a JSON-formatted error response to the HTTP context for an unhandled exception
+        /// </summary>
+        /// <remarks>The response includes the exception message and stack trace in JSON format, and sets
+        /// the HTTP status code to 500 (Internal Server Error)</remarks>
+        /// <param name="context">The HTTP context for the current request. The response will be written to this context</param>
+        /// <param name="ex">The exception that occurred and will be reported in the response</param>
+        /// <returns></returns>
         private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
             var response = new
@@ -76,6 +105,12 @@ namespace HMSAPI.Middlewares
         }
     }
 
+    /// <summary>
+    /// Provides extension methods for configuring global exception handling middleware in an ASP.NET Core application
+    /// </summary>
+    /// <remarks>This class contains extension methods for the IApplicationBuilder interface to simplify the
+    /// registration of middleware that handles unhandled exceptions globally. Use these methods in the application's
+    /// request pipeline configuration to ensure consistent error handling across all requests.</remarks>
     public static class ExceptionMiddlewareExtensions
     {
         public static IApplicationBuilder UseGlobalException(this IApplicationBuilder app)

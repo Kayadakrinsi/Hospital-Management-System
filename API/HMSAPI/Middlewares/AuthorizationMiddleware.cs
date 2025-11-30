@@ -6,6 +6,10 @@ using System.Text;
 
 namespace HMSAPI.Middlewares
 {
+    /// <summary>
+    /// Middleware that enforces authorization by validating JWT tokens and user sessions for incoming HTTP requests.
+    /// </summary>
+    /// <remarks></remarks>
     public class AuthorizationMiddleware
     {
         private readonly RequestDelegate _next;
@@ -19,6 +23,19 @@ namespace HMSAPI.Middlewares
             _cache = cache;
         }
 
+        /// <summary>
+        /// Processes an HTTP request to enforce JWT-based authentication and user session validation before passing
+        /// control to the next middleware component
+        /// </summary>
+        /// <remarks>If the endpoint allows anonymous access, the request is forwarded without
+        /// authentication. Otherwise, the method validates the JWT token from the 'Authorization' header and checks for
+        /// an active user session in the cache. If authentication or session validation fails, a 401 Unauthorized
+        /// response is sent and the request pipeline is terminated. On successful validation, user details are
+        /// populated for downstream access. This middleware should be registered early in the pipeline to ensure
+        /// authentication is enforced before protected resources are accessed</remarks>
+        /// <param name="context">The HTTP context for the current request. Provides access to request and response information, as well as
+        /// user and endpoint metadata.</param>
+        /// <returns></returns>
         public async Task Invoke(HttpContext context)
         {
             var endpoint = context.GetEndpoint();
@@ -83,8 +100,6 @@ namespace HMSAPI.Middlewares
                         }
                     }
                 }
-
-                //context.Items["UserInfo"] = userInfo;
             }
             catch
             {
@@ -96,6 +111,11 @@ namespace HMSAPI.Middlewares
             await _next(context);
         }
     }
+
+    /// <summary>
+    /// Provides extension methods for registering JWT-based authorization middleware in an ASP.NET Core application's
+    /// request pipeline
+    /// </summary>
     public static class JwtAuthorizationMiddlewareExtensions
     {
         public static IApplicationBuilder UseJwtAuthorization(this IApplicationBuilder app)

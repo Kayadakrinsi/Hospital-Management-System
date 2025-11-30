@@ -6,8 +6,15 @@ using ServiceStack.OrmLite;
 
 namespace HMSDAL.Repositories.Auth
 {
+    /// <summary>
+    /// DB Context class for login
+    /// </summary>
     public class DBLoginContext : ILoginRepository
     {
+        /// <summary>
+        /// Retrieves the list of available user roles
+        /// </summary>
+        /// <returns></returns>
         public List<Roles> GetRoles()
         {
             List<Roles> result = new();
