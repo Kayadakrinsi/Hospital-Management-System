@@ -12,6 +12,12 @@ COPY HMSBAL/*.csproj ./HMSBAL/
 COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj ./HMSMAL/
 
+# Restore each project individually
+RUN dotnet restore ./HMSAPI/HMSAPI.csproj
+RUN dotnet restore ./HMSBAL/HMSBAL.csproj
+RUN dotnet restore ./HMSDAL/HMSDAL.csproj
+RUN dotnet restore ./HMSMAL/HMSMAL.csproj
+
 RUN ls -R
 RUN dotnet restore --verbosity detailed
 
