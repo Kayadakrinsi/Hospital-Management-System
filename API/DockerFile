@@ -3,11 +3,11 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # Copy csproj files
-COPY HMSAPI/*.csproj HMSAPI/
-COPY HMSBAL/*.csproj HMSBAL/
-COPY HMSDAL/*.csproj HMSDAL/
+COPY hmsapi.slnx ./
+COPY HMSAPI/*.csproj ./HMSAPI/
+COPY HMSBAL/*.csproj ./HMSBAL/
+COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj HMSMAL/
-COPY HMSAPI.sln ./
 
 # Restore
 RUN dotnet restore HMSAPI.sln
