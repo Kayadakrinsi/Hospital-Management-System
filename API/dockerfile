@@ -1,28 +1,30 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-
+# Use .NET 10 SDK base image
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
-# Copy solution file
-COPY HMSAPI.sln ./
-
-# Copy project files
-COPY *.sln ./
+# Copy csproj files first
 COPY HMSAPI/*.csproj ./HMSAPI/
 COPY HMSBAL/*.csproj ./HMSBAL/
 COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj ./HMSMAL/
 
-# Restore each project individually
+# Restore projects
 RUN dotnet restore ./HMSAPI/HMSAPI.csproj
 RUN dotnet restore ./HMSBAL/HMSBAL.csproj
 RUN dotnet restore ./HMSDAL/HMSDAL.csproj
 RUN dotnet restore ./HMSMAL/HMSMAL.csproj
 
-RUN ls -R
-RUN dotnet restore --verbosity detailed
-
 # Copy all source code
-COPY . .
+COPY HMSAPI/. ./HMSAPI/
+COPY HMSBAL/. ./HMSBAL/
+COPY HMSDAL/. ./HMSDAL/
+COPY HMSMAL/. ./HMSMAL/
 
-# Build and publish
-RUN dotnet publish -c Release -o out
+# Build the projects
+RUN dotnet publish ./HMSAPI/HMSAPI.csproj -c Release -o /app/out
+
+# Use runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
+WORKDIR /app
+COPY --from=build /app/out ./
+ENTRYPOINT ["dotnet", "HMSAPI.dll"]
