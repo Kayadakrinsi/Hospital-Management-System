@@ -10,7 +10,7 @@ COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj ./HMSMAL/
 
 # Restore dependencies
-RUN dotnet restore
+RUN dotnet restore HMSAPI.slnx
 
 # Copy all source code
 COPY . .
