@@ -1,0 +1,226 @@
+[
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "BookAppointment",
+    "RelativePath": "api/CLAppointments/BookAppointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDTOAppointment",
+        "Type": "HMSMAL.DTO.Masters.DTOAppointment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "CancelAppointment",
+    "RelativePath": "api/CLAppointments/CancelAppointment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "CompleteAppointment",
+    "RelativePath": "api/CLAppointments/CompleteAppointment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "GetAppointments",
+    "RelativePath": "api/CLAppointments/GetAppointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "GetDoctors",
+    "RelativePath": "api/CLAppointments/GetDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Masters.CLAppointmentsController",
+    "Method": "GetPatients",
+    "RelativePath": "api/CLAppointments/GetPatients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "GetDepartments",
+    "RelativePath": "api/CLLogin/GetDepartments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "GetRoles",
+    "RelativePath": "api/CLLogin/GetRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "Invite",
+    "RelativePath": "api/CLLogin/Invite",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objInv",
+        "Type": "HMSMAL.DTO.Auth.DTOInvitation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "Login",
+    "RelativePath": "api/CLLogin/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objLogin",
+        "Type": "HMSMAL.DTO.Auth.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "Logout",
+    "RelativePath": "api/CLLogin/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.Auth.CLLoginController",
+    "Method": "Register",
+    "RelativePath": "api/CLLogin/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objRegistration",
+        "Type": "HMSMAL.Auth.Registration",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.User.CLUserRightsController",
+    "Method": "GetUserActivities",
+    "RelativePath": "api/CLUserRights/GetUserActivities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.User.CLUserRightsController",
+    "Method": "GetUserMenus",
+    "RelativePath": "api/CLUserRights/GetUserMenus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.User.CLUserRightsController",
+    "Method": "GetUsers",
+    "RelativePath": "api/CLUserRights/GetUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMSAPI.Controllers.User.CLUserRightsController",
+    "Method": "SaveUserRights",
+    "RelativePath": "api/CLUserRights/SaveUserRights",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDTOUserRights",
+        "Type": "HMSMAL.DTO.User.DTOUserRights",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,16 @@
+D:\Programming\HMS\HMSAPI\API\HMSDAL\bin\Debug\net10.0\HMSDAL.deps.json
+D:\Programming\HMS\HMSAPI\API\HMSDAL\bin\Debug\net10.0\HMSDAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSDAL\bin\Debug\net10.0\HMSDAL.pdb
+D:\Programming\HMS\HMSAPI\API\HMSDAL\bin\Debug\net10.0\HMSMAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSDAL\bin\Debug\net10.0\HMSMAL.pdb
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.csproj.AssemblyReference.cache
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.AssemblyInfoInputs.cache
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.AssemblyInfo.cs
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.csproj.CoreCompileInputs.cache
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.sourcelink.json
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.csproj.Up2Date
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\refint\HMSDAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\HMSDAL.pdb
+D:\Programming\HMS\HMSAPI\API\HMSDAL\obj\Debug\net10.0\ref\HMSDAL.dll

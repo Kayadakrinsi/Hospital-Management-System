@@ -1,0 +1,118 @@
+2025-11-22 11:13:10.7486 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-22 11:13:11.1165 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-22 11:13:11.6038 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-22 11:13:11.6038 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-22 11:13:11.6517 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-22 11:13:11.6517 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-22 11:13:11.6517 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-22 11:13:12.3022 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-22 11:13:12.3022 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-22 11:13:12.3232 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 27.5338ms 
+2025-11-22 11:13:12.4022 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 108.7822ms 
+2025-11-22 11:13:12.4313 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-22 11:13:12.4486 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 17.4094ms 
+2025-11-22 11:13:48.3453 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Register - application/json 95 
+2025-11-22 11:13:48.4174 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:13:50.6475 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI)' 
+2025-11-22 11:13:50.7060 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Register", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(HMSMAL.Auth.Registration) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:15:26.9625 | INFO | errorFile | SaveRegistration : Incorrect integer value: 'O' for column 'Gender' at row 1 
+2025-11-22 11:15:26.9835 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-22 11:15:27.0253 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI) in 96308.9149ms 
+2025-11-22 11:15:27.0253 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI)' 
+2025-11-22 11:15:27.0253 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Register - 200 - application/json;+charset=utf-8 98682.2730ms 
+2025-11-22 11:19:24.3468 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.html - - - 
+2025-11-22 11:19:24.7340 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.html - 200 - text/html;charset=utf-8 387.2727ms 
+2025-11-22 11:19:24.7374 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-22 11:19:24.7374 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-22 11:19:24.7374 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 10.9594ms 
+2025-11-22 11:19:24.7707 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 32.2645ms 
+2025-11-22 11:19:25.3877 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-22 11:19:25.3989 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.3075ms 
+2025-11-22 11:19:46.7210 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Register - application/json 95 
+2025-11-22 11:19:46.7525 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:19:46.7863 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI)' 
+2025-11-22 11:19:46.7863 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Register", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(HMSMAL.Auth.Registration) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:19:57.4926 | INFO | errorFile | SaveRegistration : Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running. 
+2025-11-22 11:19:57.4926 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-22 11:19:57.4926 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI) in 10702.3658ms 
+2025-11-22 11:19:57.5020 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI)' 
+2025-11-22 11:19:57.5020 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Register - 200 - application/json;+charset=utf-8 10781.9326ms 
+2025-11-22 11:20:02.5143 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Register - application/json 95 
+2025-11-22 11:20:02.5190 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:20:02.5190 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Register (HMSAPI)' 
+2025-11-22 11:20:02.5190 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Register", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(HMSMAL.Auth.Registration) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:23:29.2742 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-22 11:23:29.3621 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-22 11:23:29.6778 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-22 11:23:29.6778 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-22 11:23:29.7154 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-22 11:23:29.7154 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-22 11:23:29.7154 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-22 11:23:30.1127 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-22 11:23:30.1127 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-22 11:23:30.1330 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 26.0413ms 
+2025-11-22 11:23:30.1641 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 58.9065ms 
+2025-11-22 11:23:30.2151 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-22 11:23:30.2319 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 16.8360ms 
+2025-11-22 11:23:46.9620 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 67 
+2025-11-22 11:23:46.9956 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:23:47.0527 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:23:47.0667 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:24:45.9529 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 58880.2148ms 
+2025-11-22 11:24:45.9529 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:24:45.9556 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. Value cannot be null. (Parameter 'value')    at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Security.Claims.Claim..ctor(String type, String value, String valueType, String issuer, String originalIssuer, ClaimsIdentity subject, String propertyKey, String propertyValue)
+   at System.Security.Claims.Claim..ctor(String type, String value)
+   at HMSBAL.Services.Auth.BLLoginHandler.GenerateJwtToken() in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\Auth\BLLoginHandler.cs:line 399
+   at HMSBAL.Services.Auth.BLLoginHandler.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\Auth\BLLoginHandler.cs:line 367
+   at HMSAPI.Controllers.Auth.CLLoginController.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSAPI\Controllers\Auth\CLLoginController.cs:line 54
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-22 11:24:50.1051 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 500 - text/plain;+charset=utf-8 63143.2241ms 
+2025-11-22 11:25:28.0895 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 67 
+2025-11-22 11:25:28.0895 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:25:28.0895 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:25:28.0982 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:25:29.5501 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-22 11:25:29.5501 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 1462.2749ms 
+2025-11-22 11:25:29.5652 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:25:29.5652 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 200 - application/json;+charset=utf-8 1476.4998ms 
+2025-11-22 11:26:02.1634 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 57 
+2025-11-22 11:26:02.1634 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-22 11:26:02.1634 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:26:02.1737 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-22 11:26:19.5804 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-22 11:26:19.5809 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 17402.7387ms 
+2025-11-22 11:26:19.5809 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-22 11:26:19.5809 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 200 - application/json;+charset=utf-8 17422.7616ms 
+2025-11-22 20:17:15.3829 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-22 20:17:15.7986 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-22 20:17:16.7985 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-22 20:17:16.7994 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-22 20:17:16.8739 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-22 20:17:16.8739 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-22 20:17:16.8739 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-22 20:17:17.5364 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-22 20:17:17.5364 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-22 20:17:17.5750 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 45.0476ms 
+2025-11-22 20:17:17.6993 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 178.3446ms 
+2025-11-22 20:17:17.7567 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-22 20:17:17.7845 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 27.9346ms 

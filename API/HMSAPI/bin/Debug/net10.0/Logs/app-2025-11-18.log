@@ -1,0 +1,215 @@
+2025-11-18 10:33:24.5551 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 10:33:24.8622 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 10:33:25.3841 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-18 10:33:25.3865 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 10:33:25.4229 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 10:33:25.4229 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 10:33:25.4229 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 10:33:26.1543 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/ - - - 
+2025-11-18 10:33:26.2861 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/ - 301 - - 137.6942ms 
+2025-11-18 10:33:26.2861 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.html - - - 
+2025-11-18 10:33:26.3390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.html - 200 - text/html;charset=utf-8 50.7082ms 
+2025-11-18 10:33:26.3390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.css - - - 
+2025-11-18 10:33:26.3390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui-standalone-preset.js - - - 
+2025-11-18 10:33:26.3390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui-bundle.js - - - 
+2025-11-18 10:33:26.3390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui.css - - - 
+2025-11-18 10:33:26.3736 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.js - - - 
+2025-11-18 10:33:26.3736 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-18 10:33:26.3736 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.js - 200 - application/javascript;charset=utf-8 6.8201ms 
+2025-11-18 10:33:26.3850 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.css - 200 152 text/css 46.5954ms 
+2025-11-18 10:33:26.3850 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 15.8188ms 
+2025-11-18 10:33:26.4200 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui.css - 200 23647 text/css 75.4824ms 
+2025-11-18 10:33:26.4200 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui-standalone-preset.js - 200 77352 text/javascript 75.5607ms 
+2025-11-18 10:33:26.4200 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-18 10:33:26.4343 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui-bundle.js - 200 424767 text/javascript 89.3737ms 
+2025-11-18 10:33:26.5051 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 81.8030ms 
+2025-11-18 10:33:26.5883 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-18 10:33:26.5883 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.5806ms 
+2025-11-18 10:33:26.6073 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/favicon-32x32.png - - - 
+2025-11-18 10:33:26.6073 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/favicon-32x32.png - 304 - - 1.6122ms 
+2025-11-18 10:34:40.9171 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 103 
+2025-11-18 10:34:40.9406 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 10:34:42.9321 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 10:34:42.9572 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 10:34:43.0361 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-11-18 10:34:43.1068 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 136.1418ms 
+2025-11-18 10:34:43.1068 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 10:34:43.1068 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 400 - application/problem+json;+charset=utf-8 2198.8635ms 
+2025-11-18 13:48:45.2978 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 13:48:45.6685 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 13:48:46.3243 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-18 13:48:46.3243 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 13:48:46.3673 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 13:48:46.3673 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 13:48:46.3691 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 13:48:47.1123 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-18 13:48:47.1123 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-18 13:48:47.1449 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 38.1926ms 
+2025-11-18 13:48:47.2881 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 188.4327ms 
+2025-11-18 13:48:47.3357 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-18 13:48:47.3645 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 29.0282ms 
+2025-11-18 13:48:54.7693 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLLogin/GetDepartments - - - 
+2025-11-18 13:48:59.6854 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.GetDepartments (HMSAPI)' 
+2025-11-18 13:48:59.7047 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetDepartments", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDepartments() on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 13:49:25.0733 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 13:49:25.1437 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.GetDepartments (HMSAPI) in 25412.0574ms 
+2025-11-18 13:49:25.1437 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.GetDepartments (HMSAPI)' 
+2025-11-18 13:49:25.1437 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLLogin/GetDepartments - 200 - application/json;+charset=utf-8 30378.7729ms 
+2025-11-18 13:55:18.0952 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 13:55:18.3555 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 13:55:18.8980 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 13:55:18.9995 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 13:55:18.9995 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 13:55:18.9995 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 13:56:13.8362 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 13:56:14.0911 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 13:56:14.7946 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-18 13:56:14.7946 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 13:56:14.9182 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 13:56:14.9182 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 13:56:14.9182 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 13:56:15.5355 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-18 13:56:15.5355 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-18 13:56:15.5819 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 65.0570ms 
+2025-11-18 13:56:15.6516 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 138.2036ms 
+2025-11-18 13:56:15.7328 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-18 13:56:15.7597 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 26.9742ms 
+2025-11-18 13:56:49.1893 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 100 
+2025-11-18 13:56:49.4664 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 13:56:50.1546 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 13:56:50.3160 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 13:56:50.3410 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 13:56:50.4520 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 13:56:50.6423 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 148.3934ms 
+2025-11-18 13:56:50.6536 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 13:56:50.6904 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. The ignore condition 'JsonIgnoreCondition.WhenWritingNull' is not valid on value-type member 'DepartmentId' on type 'HMSMAL.DTO.Auth.DTOInvitation'. Consider using 'JsonIgnoreCondition.WhenWritingDefault'.    at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_IgnoreConditionOnValueTypeInvalid(String clrPropertyName, Type propertyDeclaringType)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ConfigureIgnoreCondition(Nullable`1 ignoreCondition)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulatePropertyInfo(JsonPropertyInfo jsonPropertyInfo, MemberInfo memberInfo, JsonConverter customConverter, Nullable`1 ignoreCondition, NullabilityInfoContext nullabilityCtx, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, NullabilityInfoContext nullabilityCtx, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo, NullabilityInfoContext nullabilityCtx)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoForRootType(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializer.DeserializeAsync(PipeReader utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-18 13:56:50.9517 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 500 - text/plain;+charset=utf-8 1761.8197ms 
+2025-11-18 14:25:17.4845 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 14:25:17.6671 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 14:25:18.4224 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-18 14:25:18.4224 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 14:25:18.5179 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 14:25:18.5257 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 14:25:18.5257 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 14:25:19.3104 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-18 14:25:19.3104 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-18 14:25:19.3662 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 81.4810ms 
+2025-11-18 14:25:19.4409 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 159.3946ms 
+2025-11-18 14:25:19.5074 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-18 14:25:19.5485 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 41.2739ms 
+2025-11-18 14:25:53.1461 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 100 
+2025-11-18 14:25:53.2090 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:25:53.4354 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:25:53.4784 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:25:53.4784 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:25:53.5162 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:26:51.6334 | INFO | errorFile | SaveInvitation : Out of range value for column 'Contact' at row 1 
+2025-11-18 14:26:51.6400 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 14:26:51.6924 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 58163.9016ms 
+2025-11-18 14:26:51.6924 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:26:51.6924 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 200 - application/json;+charset=utf-8 58549.6427ms 
+2025-11-18 14:26:56.4113 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 100 
+2025-11-18 14:26:56.4196 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:26:56.4196 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:26:56.4196 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:26:56.4684 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:26:56.4958 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:28:37.4312 | INFO | errorFile | SaveInvitation : Out of range value for column 'Contact' at row 1 
+2025-11-18 14:28:37.4318 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 14:28:37.4318 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 100942.6543ms 
+2025-11-18 14:28:37.4318 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:28:37.4487 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 200 - application/json;+charset=utf-8 101042.2483ms 
+2025-11-18 14:29:35.3162 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 100 
+2025-11-18 14:29:35.3162 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:29:35.3235 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:29:35.3235 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:29:35.3235 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:29:35.3235 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:33:29.1971 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-18 14:33:29.5003 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-18 14:33:30.1955 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-18 14:33:30.1973 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-18 14:33:30.3094 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-18 14:33:30.3094 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-18 14:33:30.3094 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-18 14:33:32.1196 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-18 14:33:32.1196 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-18 14:33:32.2058 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 109.8072ms 
+2025-11-18 14:33:32.3301 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 241.2845ms 
+2025-11-18 14:33:32.4309 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-18 14:33:32.4678 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 37.2676ms 
+2025-11-18 14:34:24.8766 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 91 
+2025-11-18 14:34:25.0514 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:34:25.4680 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:34:25.5803 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:34:25.5882 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:34:25.7138 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:35:12.1300 | INFO | errorFile | SendInvitationEmail : The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to 
+2025-11-18 14:35:35.3688 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 14:35:35.4945 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 69748.6364ms 
+2025-11-18 14:35:35.4945 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:35:35.4945 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 200 - application/json;+charset=utf-8 70623.4705ms 
+2025-11-18 14:35:57.8959 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 91 
+2025-11-18 14:35:57.9727 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:35:58.0054 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:35:58.0764 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:35:58.1139 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:35:58.1373 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:36:11.0897 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 14:36:13.7053 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 15471.9687ms 
+2025-11-18 14:36:13.7053 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:36:13.7053 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 200 - application/json;+charset=utf-8 15817.6902ms 
+2025-11-18 14:36:34.1550 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - application/json 92 
+2025-11-18 14:36:34.1670 | INFO | Microsoft.AspNetCore.Cors.Infrastructure.CorsService | CORS policy execution successful. 
+2025-11-18 14:36:34.2251 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-18 14:36:34.2449 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-18 14:36:34.2449 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:36:34.2644 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Invite", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Invite(HMSMAL.DTO.Auth.DTOInvitation) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-18 14:37:12.9081 | INFO | errorFile | SendInvitationEmail : The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to 
+2025-11-18 14:37:19.1760 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-18 14:37:19.2048 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI) in 44929.4446ms 
+2025-11-18 14:37:19.2048 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Invite (HMSAPI)' 
+2025-11-18 14:37:19.2658 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Invite - 200 - application/json;+charset=utf-8 45113.6889ms 

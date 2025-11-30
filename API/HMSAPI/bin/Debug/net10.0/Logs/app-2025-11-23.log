@@ -1,0 +1,281 @@
+2025-11-23 11:26:36.3063 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 11:26:38.4906 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 11:26:41.7139 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-23 11:26:41.7267 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 11:26:41.8680 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 11:26:41.8842 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 11:26:41.9265 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 11:26:45.1713 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 11:26:45.1713 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-23 11:26:45.2423 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 71.7377ms 
+2025-11-23 11:26:45.7180 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 567.5555ms 
+2025-11-23 11:26:54.3070 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-23 11:26:54.3425 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 35.6838ms 
+2025-11-23 11:27:03.6702 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:27:08.0475 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:27:08.0965 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:27:08.0965 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:27:08.1369 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:27:33.6622 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:27:33.7380 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 25583.8954ms 
+2025-11-23 11:27:33.7380 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:27:33.7380 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 30071.0216ms 
+2025-11-23 11:27:38.5259 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:27:38.5495 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:27:38.5495 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:27:38.5495 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:27:38.5495 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:28:19.9954 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:28:19.9954 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 41438.387ms 
+2025-11-23 11:28:19.9954 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:28:19.9954 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 41474.0359ms 
+2025-11-23 11:28:22.5451 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:28:22.5567 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:28:22.5567 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:28:22.5567 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:28:22.5645 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:28:29.7322 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:28:29.7322 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 7164.1493ms 
+2025-11-23 11:28:29.7322 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:28:29.7369 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 7190.4671ms 
+2025-11-23 11:28:37.7597 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:28:37.7597 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:28:37.7771 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:28:37.7836 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:28:37.7836 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:28:45.2416 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:28:45.2416 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 7449.5884ms 
+2025-11-23 11:28:45.2416 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:28:45.2416 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 7486.3511ms 
+2025-11-23 11:29:01.9595 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 11:29:02.2374 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 11:29:02.8066 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-23 11:29:02.8066 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 11:29:02.9297 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 11:29:02.9297 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 11:29:02.9297 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 11:29:03.4458 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-23 11:29:03.4458 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 11:29:03.7197 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 280.2529ms 
+2025-11-23 11:29:03.8406 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 412.5591ms 
+2025-11-23 11:29:03.9811 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-23 11:29:04.0172 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 36.0326ms 
+2025-11-23 11:29:34.1187 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:29:34.6211 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:29:34.7037 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:29:34.7305 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:29:34.8949 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:29:53.4707 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:47:05.2073 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 11:47:06.0216 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 11:47:07.5339 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-23 11:47:07.5339 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 11:47:07.6575 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 11:47:07.6589 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 11:47:07.6589 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 11:47:08.8189 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-23 11:47:08.8189 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 11:47:08.8769 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 74.8712ms 
+2025-11-23 11:47:08.9571 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 158.0520ms 
+2025-11-23 11:47:09.0352 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-23 11:47:09.0739 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 38.7842ms 
+2025-11-23 11:47:09.9935 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/.well-known/appspecific/com.chrome.devtools.json - - - 
+2025-11-23 11:47:13.9242 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 3930.6535ms 
+2025-11-23 11:47:13.9242 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7032/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404 
+2025-11-23 11:48:15.2003 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:48:15.5167 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:48:15.5499 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:48:15.5499 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:48:15.5816 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:48:49.4414 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:48:49.5328 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 33930.5808ms 
+2025-11-23 11:48:49.5349 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:48:49.5349 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 34336.1310ms 
+2025-11-23 11:48:51.9159 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:48:51.9244 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:48:51.9244 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:48:51.9244 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:48:51.9244 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:49:42.2700 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:49:42.2941 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 50360.0737ms 
+2025-11-23 11:49:42.2941 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:49:42.2941 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 50381.2431ms 
+2025-11-23 11:50:00.7441 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - - - 
+2025-11-23 11:50:00.7441 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 11:50:00.7441 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 11:50:00.7533 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:50:00.7533 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUserMenus", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserMenus() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 11:52:30.8209 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 11:52:30.8209 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI) in 150069.9328ms 
+2025-11-23 11:52:30.8334 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUserMenus (HMSAPI)' 
+2025-11-23 11:52:30.8334 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUserMenus - 200 - application/json;+charset=utf-8 150099.2779ms 
+2025-11-23 12:42:27.1243 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 12:42:27.2903 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 12:42:27.9436 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-23 12:42:27.9436 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 12:42:28.0722 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 12:42:28.0722 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 12:42:28.0722 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 12:42:28.3862 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 12:42:28.3862 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-23 12:42:28.4228 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 47.6865ms 
+2025-11-23 12:42:28.4752 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 102.9126ms 
+2025-11-23 12:42:28.5480 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-23 12:42:28.5712 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 23.1489ms 
+2025-11-23 12:42:42.4618 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUsers - - - 
+2025-11-23 12:42:42.6525 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 12:42:42.6908 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 12:42:42.6908 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 12:42:42.7112 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUsers", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUsers() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 12:45:04.4201 | ERROR | appLog | Error in GetUsers: Object reference not set to an instance of an object. Object reference not set to an instance of an object.    at ServiceStack.OrmLite.OrmLiteUtils.Merge[Parent,Child](List`1 parents, List`1 children) in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteUtils.cs:line 904
+   at HMSBAL.Services.User.BLUserRightsHandler.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\User\BLUserRightsHandler.cs:line 105
+2025-11-23 12:45:09.9744 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI) in 147247.6042ms 
+2025-11-23 12:45:09.9744 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 12:45:09.9744 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.    at HMSBAL.Services.User.BLUserRightsHandler.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\User\BLUserRightsHandler.cs:line 130
+   at HMSAPI.Controllers.User.CLUserRightsController.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSAPI\Controllers\User\CLUserRightsController.cs:line 31
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:45:12.4805 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUsers - 500 - text/plain;+charset=utf-8 150018.7090ms 
+2025-11-23 12:45:22.6255 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUsers - - - 
+2025-11-23 12:45:22.6368 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 12:45:22.6368 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 12:45:22.6777 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 12:45:22.6777 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUsers", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUsers() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 12:46:44.6876 | ERROR | appLog | Error in GetUsers: Object reference not set to an instance of an object. Object reference not set to an instance of an object.    at ServiceStack.OrmLite.OrmLiteUtils.Merge[Parent,Child](List`1 parents, List`1 children) in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteUtils.cs:line 904
+   at HMSBAL.Services.User.BLUserRightsHandler.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\User\BLUserRightsHandler.cs:line 105
+2025-11-23 12:46:47.1784 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI) in 84498.2837ms 
+2025-11-23 12:46:47.1931 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 12:46:47.2254 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.    at HMSBAL.Services.User.BLUserRightsHandler.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\User\BLUserRightsHandler.cs:line 130
+   at HMSAPI.Controllers.User.CLUserRightsController.GetUsers() in D:\Programming\HMS\HMSAPI\API\HMSAPI\Controllers\User\CLUserRightsController.cs:line 31
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-23 12:46:48.0969 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLUserRights/GetUsers - 500 - text/plain;+charset=utf-8 85471.4202ms 
+2025-11-23 17:05:31.9293 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 17:05:32.3141 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 17:05:33.1140 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 17:05:33.2030 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 17:05:33.2030 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 17:05:33.2060 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 17:05:33.5582 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/ - - - 
+2025-11-23 17:05:33.8071 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/ - 301 - - 263.0069ms 
+2025-11-23 17:05:33.8071 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/index.html - - - 
+2025-11-23 17:05:33.9221 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/index.html - 200 - text/html;charset=utf-8 109.4862ms 
+2025-11-23 17:05:33.9221 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger-ui.css - - - 
+2025-11-23 17:05:33.9238 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/index.css - - - 
+2025-11-23 17:05:33.9238 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger-ui-bundle.js - - - 
+2025-11-23 17:05:33.9238 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger-ui-standalone-preset.js - - - 
+2025-11-23 17:05:33.9628 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/index.js - - - 
+2025-11-23 17:05:34.0075 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 17:05:34.0075 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/index.js - 200 - application/javascript;charset=utf-8 39.7430ms 
+2025-11-23 17:05:34.0075 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 3.0651ms 
+2025-11-23 17:05:34.0302 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/index.css - 200 152 text/css 105.9067ms 
+2025-11-23 17:05:34.0302 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger-ui.css - 200 23647 text/css 107.8908ms 
+2025-11-23 17:05:34.0302 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger-ui-standalone-preset.js - 200 77352 text/javascript 107.6006ms 
+2025-11-23 17:05:34.0338 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_vs/browserLink - - - 
+2025-11-23 17:05:34.0338 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger-ui-bundle.js - 200 424767 text/javascript 117.4263ms 
+2025-11-23 17:05:34.1450 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 110.4188ms 
+2025-11-23 17:05:34.2642 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - - - 
+2025-11-23 17:05:34.2730 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 8.8333ms 
+2025-11-23 17:05:34.2844 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/favicon-32x32.png - - - 
+2025-11-23 17:05:34.2844 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/favicon-32x32.png - 200 628 image/png 4.0106ms 
+2025-11-23 17:07:32.3067 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/api/CLUserRights/GetUsers - - - 
+2025-11-23 17:07:32.3067 | WARN | Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware | Failed to determine the https port for redirect. 
+2025-11-23 17:07:34.9554 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 17:07:35.0064 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 17:07:35.0064 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 17:07:35.0468 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUsers", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUsers() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 17:12:58.2837 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-23 17:12:58.4889 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-23 17:12:58.8631 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-23 17:12:58.9258 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-23 17:12:58.9258 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-23 17:12:58.9258 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-23 17:12:59.2540 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_vs/browserLink - - - 
+2025-11-23 17:12:59.2540 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 17:12:59.2786 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 33.8776ms 
+2025-11-23 17:12:59.3405 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 97.7216ms 
+2025-11-23 17:12:59.4269 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - - - 
+2025-11-23 17:12:59.4502 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 23.3850ms 
+2025-11-23 17:13:08.8467 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/api/CLUserRights/GetUsers - - - 
+2025-11-23 17:13:08.8779 | WARN | Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware | Failed to determine the https port for redirect. 
+2025-11-23 17:13:09.0263 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Failed to validate the token. IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.    at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-11-23 17:13:09.0540 | INFO | Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler | Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. 
+2025-11-23 17:13:09.0540 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 17:13:09.0861 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUsers", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUsers() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 17:13:42.9276 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 17:13:42.9834 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI) in 33890.0343ms 
+2025-11-23 17:13:42.9834 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 17:13:42.9834 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/api/CLUserRights/GetUsers - 200 - application/json;+charset=utf-8 34138.1099ms 
+2025-11-23 17:13:43.9663 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/index.html - - - 
+2025-11-23 17:13:44.1490 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/index.html - 200 - text/html;charset=utf-8 182.7864ms 
+2025-11-23 17:13:44.1655 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_vs/browserLink - - - 
+2025-11-23 17:13:44.1655 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-23 17:13:44.1655 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 2.9049ms 
+2025-11-23 17:13:44.1955 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 30.1128ms 
+2025-11-23 17:13:44.2587 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - - - 
+2025-11-23 17:13:44.2755 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 16.9182ms 
+2025-11-23 17:13:49.2877 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/1.1 GET http://localhost:5038/api/CLUserRights/GetUsers - - - 
+2025-11-23 17:13:49.2877 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 17:13:49.2877 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "GetUsers", controller = "CLUserRights"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUsers() on controller HMSAPI.Controllers.User.CLUserRightsController (HMSAPI). 
+2025-11-23 17:14:05.2419 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing OkObjectResult, writing value of type 'HMSMAL.Common.Response'. 
+2025-11-23 17:14:05.2419 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI) in 15951.596ms 
+2025-11-23 17:14:05.2419 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.User.CLUserRightsController.GetUsers (HMSAPI)' 
+2025-11-23 17:14:05.2419 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 GET http://localhost:5038/api/CLUserRights/GetUsers - 200 - application/json;+charset=utf-8 15959.9393ms 

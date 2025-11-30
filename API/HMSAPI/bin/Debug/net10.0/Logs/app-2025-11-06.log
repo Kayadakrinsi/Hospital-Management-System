@@ -1,0 +1,240 @@
+2025-11-06 22:48:42.3967 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 22:48:42.6727 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | Creating key {ae878f81-f869-44c4-85b6-53649d74bdf8} with creation date 2025-11-06 17:18:42Z, activation date 2025-11-06 17:18:42Z, and expiration date 2026-02-04 17:18:42Z. 
+2025-11-06 22:48:42.8272 | INFO | Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository | Writing data to file 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys\key-ae878f81-f869-44c4-85b6-53649d74bdf8.xml'. 
+2025-11-06 22:48:43.6580 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 22:48:45.9446 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 22:48:45.9446 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 22:48:46.1547 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 22:48:46.1547 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 22:48:46.1547 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 22:57:57.1642 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 22:57:57.3449 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 22:57:57.5989 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 22:57:57.5989 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 22:57:57.7025 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 22:57:57.7025 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 22:57:57.7025 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 22:58:12.9464 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger - - - 
+2025-11-06 22:58:19.9356 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger - 404 - - 6991.2625ms 
+2025-11-06 22:58:19.9503 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7032/swagger, Response status code: 404 
+2025-11-06 22:58:53.2920 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 22:58:53.6123 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 22:58:54.3959 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 22:58:54.3959 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 22:58:54.4936 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 22:58:54.4936 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 22:58:54.4971 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 22:59:09.3857 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/ - - - 
+2025-11-06 22:59:09.6197 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/ - 301 - - 249.8122ms 
+2025-11-06 22:59:09.6219 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.html - - - 
+2025-11-06 22:59:09.7242 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.html - 200 - text/html;charset=utf-8 100.8542ms 
+2025-11-06 22:59:09.7829 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui.css - - - 
+2025-11-06 22:59:09.8052 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.css - - - 
+2025-11-06 22:59:09.8052 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui-bundle.js - - - 
+2025-11-06 22:59:09.8052 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger-ui-standalone-preset.js - - - 
+2025-11-06 22:59:09.8052 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/index.js - - - 
+2025-11-06 22:59:09.8759 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-06 22:59:09.8759 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-06 22:59:09.9065 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.js - 200 - application/javascript;charset=utf-8 103.7695ms 
+2025-11-06 22:59:09.9532 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/index.css - 200 152 text/css 148.1452ms 
+2025-11-06 22:59:09.9877 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 109.4844ms 
+2025-11-06 22:59:09.9877 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui.css - 200 23647 text/css 210.7600ms 
+2025-11-06 22:59:09.9877 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui-standalone-preset.js - 200 77352 text/javascript 188.3283ms 
+2025-11-06 22:59:09.9969 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger-ui-bundle.js - 200 424767 text/javascript 193.2617ms 
+2025-11-06 22:59:10.0864 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 207.8455ms 
+2025-11-06 22:59:10.2783 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-06 22:59:10.2783 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.3579ms 
+2025-11-06 22:59:10.2939 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/favicon-32x32.png - - - 
+2025-11-06 22:59:10.2939 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/favicon-32x32.png - 200 628 image/png 4.0916ms 
+2025-11-06 22:59:18.7376 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 263 
+2025-11-06 22:59:19.2007 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 22:59:19.3950 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-06 22:59:26.8635 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 7428.6863ms 
+2025-11-06 22:59:26.8787 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 22:59:26.9105 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. Authentication to host 'localhost' for user 'root' using method 'caching_sha2_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)    at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthenticationAsync(Boolean execAsync, Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticateAsync(Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateAsync(String authMethod, Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriverAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at ServiceStack.OrmLite.OrmLiteConnection.Open() in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnection.cs:line 153
+   at ServiceStack.OrmLite.OrmLiteConnectionFactory.OpenDbConnection() in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnectionFactory.cs:line 112
+   at ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(IDbConnectionFactory connectionFactory) in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnectionFactory.cs:line 330
+   at HMSDAL.Common.MySqlOrmLite.Open() in D:\Programming\HMS\HMSAPI\API\HMSDAL\Common\MySqlOrmLite.cs:line 42
+   at HMSBAL.Services.Auth.BLLoginHandler.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\Auth\BLLoginHandler.cs:line 269
+   at HMSAPI.Controllers.Auth.CLLoginController.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSAPI\Controllers\Auth\CLLoginController.cs:line 40
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 22:59:29.6795 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 500 - text/plain;+charset=utf-8 10941.9858ms 
+2025-11-06 23:00:51.8557 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:00:52.0936 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:00:52.3003 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:00:52.3003 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:00:52.3762 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:00:52.3762 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:00:52.3762 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:00:58.2964 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:00:58.3903 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:00:58.3903 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:00:58.4039 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLLogin/Login - 405 - - 102.4128ms 
+2025-11-06 23:01:04.7828 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-06 23:01:04.7828 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-06 23:01:04.7828 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 10.2148ms 
+2025-11-06 23:01:04.8390 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.1686ms 
+2025-11-06 23:01:05.0494 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-06 23:01:05.0494 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.5387ms 
+2025-11-06 23:01:35.6735 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 53 
+2025-11-06 23:01:35.6735 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 23:01:35.6918 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-06 23:01:35.7279 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-11-06 23:01:35.7577 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 56.1851ms 
+2025-11-06 23:01:35.7577 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 23:01:35.7577 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 400 - application/problem+json;+charset=utf-8 85.3981ms 
+2025-11-06 23:02:45.3859 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:02:45.4818 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:02:45.8404 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:02:45.8404 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:02:45.9306 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:02:45.9306 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:02:45.9342 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:02:46.0945 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-06 23:02:46.0945 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-06 23:02:46.1230 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 25.4280ms 
+2025-11-06 23:02:46.1692 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 80.0400ms 
+2025-11-06 23:02:46.2294 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-06 23:02:46.2579 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 28.3945ms 
+2025-11-06 23:04:44.8864 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:04:45.0498 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:04:45.0498 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:04:45.0498 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - 405 0 - 168.5672ms 
+2025-11-06 23:04:53.5866 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:04:53.6020 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:04:53.6020 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:04:53.6060 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - 405 0 - 19.6711ms 
+2025-11-06 23:05:15.3414 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 POST https://localhost:7032/api/CLLogin/Login - application/json 53 
+2025-11-06 23:05:15.3580 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 23:05:15.4256 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Route matched with {action = "Login", controller = "CLLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HMSMAL.DTO.Auth.Login) on controller HMSAPI.Controllers.Auth.CLLoginController (HMSAPI). 
+2025-11-06 23:05:16.3042 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI) in 840.8561ms 
+2025-11-06 23:05:16.3094 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HMSAPI.Controllers.Auth.CLLoginController.Login (HMSAPI)' 
+2025-11-06 23:05:16.3260 | ERROR | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | An unhandled exception has occurred while executing the request. Authentication to host 'localhost' for user 'root' using method 'caching_sha2_password' failed with message: Access denied for user 'root'@'localhost' (using password: YES)    at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthenticationAsync(Boolean execAsync, Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticateAsync(Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.AuthenticateAsync(String authMethod, Boolean reset, Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.NativeDriver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.Driver.CreateAsync(MySqlConnectionStringBuilder settings, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriverAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlPool.GetConnectionAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at ServiceStack.OrmLite.OrmLiteConnection.Open() in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnection.cs:line 153
+   at ServiceStack.OrmLite.OrmLiteConnectionFactory.OpenDbConnection() in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnectionFactory.cs:line 112
+   at ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(IDbConnectionFactory connectionFactory) in /home/runner/work/ServiceStack/ServiceStack/ServiceStack.OrmLite/src/ServiceStack.OrmLite/OrmLiteConnectionFactory.cs:line 330
+   at HMSDAL.Common.MySqlOrmLite.Open() in D:\Programming\HMS\HMSAPI\API\HMSDAL\Common\MySqlOrmLite.cs:line 42
+   at HMSBAL.Services.Auth.BLLoginHandler.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSBAL\Services\Auth\BLLoginHandler.cs:line 269
+   at HMSAPI.Controllers.Auth.CLLoginController.Login(Login objLogin) in D:\Programming\HMS\HMSAPI\API\HMSAPI\Controllers\Auth\CLLoginController.cs:line 40
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-06 23:05:16.5177 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 POST https://localhost:7032/api/CLLogin/Login - 500 - text/plain;+charset=utf-8 1176.2582ms 
+2025-11-06 23:07:00.9793 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:07:01.2816 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:07:01.8661 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:07:01.8661 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:07:01.9241 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:07:01.9241 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:07:01.9241 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:08:17.9673 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:08:18.1122 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:08:18.3723 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:08:18.3723 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:08:18.4245 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:08:18.4245 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:08:18.4245 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:09:15.0673 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:09:15.1776 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:09:15.3539 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:09:15.3557 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:09:15.4168 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:09:15.4168 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:09:15.4188 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:10:31.5124 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:10:31.6069 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:10:31.7593 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:10:31.7593 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:10:31.7997 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:10:31.7997 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:10:31.7997 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:11:18.1595 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 
+2025-11-06 23:11:18.1595 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 
+2025-11-06 23:11:18.3080 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 110.6573ms 
+2025-11-06 23:11:18.4187 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 274.5614ms 
+2025-11-06 23:11:18.5176 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 
+2025-11-06 23:11:18.5979 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 80.1383ms 
+2025-11-06 23:12:16.8605 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:12:17.0150 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:12:17.0150 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:12:17.0150 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - 405 0 - 161.4301ms 
+2025-11-06 23:13:54.5491 | INFO | Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager | User profile is available. Using 'C:\Users\kayad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-11-06 23:13:54.6687 | INFO | HMSAPI.Startup | Application Starting... 
+2025-11-06 23:13:54.8548 | INFO | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:7032 
+2025-11-06 23:13:54.8576 | INFO | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5038 
+2025-11-06 23:13:54.9497 | INFO | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down. 
+2025-11-06 23:13:54.9500 | INFO | Microsoft.Hosting.Lifetime | Hosting environment: Development 
+2025-11-06 23:13:54.9500 | INFO | Microsoft.Hosting.Lifetime | Content root path: D:\Programming\HMS\HMSAPI\API\HMSAPI 
+2025-11-06 23:14:13.1194 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:14:13.3076 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:14:13.3090 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:14:13.3400 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 OPTIONS https://localhost:7032/api/CLLogin/Login - 405 0 - 210.7807ms 
+2025-11-06 23:14:27.6427 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request starting HTTP/2 GET https://localhost:7032/api/CLLogin/Login - - - 
+2025-11-06 23:14:27.8804 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executing endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:14:27.8804 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint '405 HTTP Method Not Supported' 
+2025-11-06 23:14:27.8953 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/2 GET https://localhost:7032/api/CLLogin/Login - 405 - - 252.3438ms 

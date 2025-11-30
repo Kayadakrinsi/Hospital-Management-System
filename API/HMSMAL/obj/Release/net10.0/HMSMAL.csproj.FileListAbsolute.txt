@@ -1,0 +1,13 @@
+D:\Programming\HMS\HMSAPI\API\HMSMAL\bin\Release\net10.0\HMSMAL.deps.json
+D:\Programming\HMS\HMSAPI\API\HMSMAL\bin\Release\net10.0\HMSMAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSMAL\bin\Release\net10.0\HMSMAL.pdb
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.csproj.AssemblyReference.cache
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.AssemblyInfoInputs.cache
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.AssemblyInfo.cs
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.csproj.CoreCompileInputs.cache
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.sourcelink.json
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\refint\HMSMAL.dll
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\HMSMAL.pdb
+D:\Programming\HMS\HMSAPI\API\HMSMAL\obj\Release\net10.0\ref\HMSMAL.dll
