@@ -1,15 +1,15 @@
-# 1. Build stage
+# BUILD STAGE
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
 # Copy solution
 COPY HMSAPI.slnx ./
 
-# Copy projects
-COPY HMSAPI/HMSAPI.csproj HMSAPI/
-COPY HMSBAL/HMSBAL.csproj HMSBAL/
-COPY HMSDAL/HMSDAL.csproj HMSDAL/
-COPY HMSMAL/HMSMAL.csproj HMSMAL/
+# Copy csproj files (wildcard so no errors)
+COPY HMSAPI/*.csproj HMSAPI/
+COPY HMSBAL/*.csproj HMSBAL/
+COPY HMSDAL/*.csproj HMSDAL/
+COPY HMSMAL/*.csproj HMSMAL/
 
 # Restore
 RUN dotnet restore
@@ -21,11 +21,9 @@ COPY . .
 WORKDIR /app/HMSAPI
 RUN dotnet publish -c Release -o out
 
-
-# 2. Runtime stage
+# FINAL RUNTIME IMAGE
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
 COPY --from=build /app/HMSAPI/out .
-
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "HMSAPI.dll"]
