@@ -1,27 +1,31 @@
-# 1. Use .NET 10 SDK for build
+# 1. Build stage
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
-# 2. Copy solution and projects
-COPY ./HMSAPI/*.csproj ./HMSAPI/
-COPY ./HMSBAL/*.csproj ./HMSBAL/
-COPY ./HMSDAL/*.csproj ./HMSDAL/
-COPY ./HMSMAL/*.csproj ./HMSMAL/
+# Copy solution
+COPY HMSAPI.slnx ./
 
+# Copy projects
+COPY HMSAPI/HMSAPI.csproj HMSAPI/
+COPY HMSBAL/HMSBAL.csproj HMSBAL/
+COPY HMSDAL/HMSDAL.csproj HMSDAL/
+COPY HMSMAL/HMSMAL.csproj HMSMAL/
 
-# 3. Restore dependencies
+# Restore
 RUN dotnet restore
 
-# 4. Copy all source code
+# Copy everything
 COPY . .
 
-# 5. Publish API project
-WORKDIR /app/API
+# Publish API project
+WORKDIR /app/HMSAPI
 RUN dotnet publish -c Release -o out
 
-# 6. Runtime image
+
+# 2. Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
-COPY --from=build /app/API/out .
-EXPOSE 5000
+COPY --from=build /app/HMSAPI/out .
+
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "HMSAPI.dll"]
