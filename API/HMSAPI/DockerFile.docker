@@ -1,20 +1,27 @@
-# Use the official .NET 10 SDK image to build the app
+# 1. Use .NET 10 SDK for build
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
-# Copy csproj and restore dependencies
-COPY *.csproj .
+# 2. Copy solution and projects
+COPY HMSAPI.sln ./
+COPY API/*.csproj ./API/
+COPY HMSBAL/*.csproj ./HMSBAL/
+COPY HMSDAL/*.csproj ./HMSDAL/
+COPY HMSMAL/*.csproj ./HMSMAL/
+
+# 3. Restore dependencies
 RUN dotnet restore
 
-# Copy everything and build
+# 4. Copy all source code
 COPY . .
+
+# 5. Publish API project
+WORKDIR /app/API
 RUN dotnet publish -c Release -o out
 
-# Build runtime image
+# 6. Runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
-COPY --from=build /app/out .
-
-# Expose default port
-EXPOSE 10000
+COPY --from=build /app/API/out .
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "HMSAPI.dll"]
