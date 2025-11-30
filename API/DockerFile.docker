@@ -2,10 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
-# Copy solution
-COPY HMSAPI.slnx ./
-
-# Copy csproj files (wildcard so no errors)
+# Copy only csproj files
 COPY HMSAPI/*.csproj HMSAPI/
 COPY HMSBAL/*.csproj HMSBAL/
 COPY HMSDAL/*.csproj HMSDAL/
@@ -14,14 +11,14 @@ COPY HMSMAL/*.csproj HMSMAL/
 # Restore
 RUN dotnet restore
 
-# Copy everything
+# Copy all source
 COPY . .
 
-# Publish API project
+# Publish API
 WORKDIR /app/HMSAPI
 RUN dotnet publish -c Release -o out
 
-# FINAL RUNTIME IMAGE
+# RUNTIME
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
 COPY --from=build /app/HMSAPI/out .
