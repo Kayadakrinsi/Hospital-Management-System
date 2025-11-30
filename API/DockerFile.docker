@@ -3,10 +3,10 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 
 # 2. Copy solution and projects
-COPY HMSAPI/*.csproj ./HMSAPI/
-COPY HMSBAL/*.csproj ./HMSBAL/
-COPY HMSDAL/*.csproj ./HMSDAL/
-COPY HMSMAL/*.csproj ./HMSMAL/
+COPY ./HMSAPI/*.csproj ./HMSAPI/
+COPY ./HMSBAL/*.csproj ./HMSBAL/
+COPY ./HMSDAL/*.csproj ./HMSDAL/
+COPY ./HMSMAL/*.csproj ./HMSMAL/
 
 
 # 3. Restore dependencies
