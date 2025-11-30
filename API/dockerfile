@@ -6,13 +6,14 @@ WORKDIR /app
 COPY HMSAPI.sln ./
 
 # Copy project files
+COPY *.sln ./
 COPY HMSAPI/*.csproj ./HMSAPI/
 COPY HMSBAL/*.csproj ./HMSBAL/
 COPY HMSDAL/*.csproj ./HMSDAL/
 COPY HMSMAL/*.csproj ./HMSMAL/
 
-# Restore dependencies
-RUN dotnet restore
+RUN ls -R
+RUN dotnet restore --verbosity detailed
 
 # Copy all source code
 COPY . .
