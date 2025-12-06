@@ -89,7 +89,7 @@ $(function () {
           if (!res.isError) {
             hms.Modules.Session.setLoginSession(res.data, res.token);
             DevExpress.ui.notify('Login successful!', 'success', 2000);
-            window.location.href = 'index.html';
+            window.location.href = 'Home.html';
           } else {
             DevExpress.ui.notify(res.message || 'Login failed', 'error', 2000);
           }
