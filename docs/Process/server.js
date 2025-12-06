@@ -4,7 +4,7 @@ export class Server {
 
     return new Promise((resolve, reject) => {
 
-      let baseURL = 'http://localhost:5000/api/';
+      let baseURL = 'http://10.108.109.161:5000/api/';
 
       $.ajax({
         url: baseURL + endPoint,
